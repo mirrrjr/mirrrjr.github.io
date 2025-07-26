@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vitepress dev --host 0.0.0.0",
     "build": "cross-env NODE_ENV=production vitepress build",
-    "preview": "cross-env NODE_ENV=production vitepress preview"
+    "preview": "cross-env NODE_ENV=production vitepress preview",
+    "deploy": "bash scripts/deploy.sh"
   },
   "keywords": [],
   "author": "mirrr <mirrrrrr@yahoo.com>",

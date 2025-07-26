@@ -7,8 +7,8 @@ const pageSize = 10
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
-    title: 'MIRRR\s blog website',
-    base: '/mirrrjr.github.io/',
+    title: 'MIRRR',
+    base: '/',
     cacheDir: './node_modules/vitepress_cache',
     description: 'vitepress,blog,blog-theme',
     ignoreDeadLinks: true,
