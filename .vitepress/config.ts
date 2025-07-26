@@ -7,14 +7,14 @@ const pageSize = 10
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
-    title: 'Vitepress blog',
-    base: '/',
+    title: 'MIRRR\s blog website',
+    base: '/mirrrjr.github.io/',
     cacheDir: './node_modules/vitepress_cache',
     description: 'vitepress,blog,blog-theme',
     ignoreDeadLinks: true,
     themeConfig: {
         posts: await getPosts(pageSize),
-        website: 'https://github.com/airene/vitepress-blog-pure', //copyright link
+        website: 'https://mirrrjr.github.io', //copyright link
         // Comment repository address https://giscus.app/ Please overwrite after initializing according to the official instructions
         comment: {
             repo: 'airene/vitepress-blog-pure',
@@ -27,7 +27,6 @@ export default defineConfig({
             { text: 'Archives', link: '/pages/archives' },
             { text: 'Tags', link: '/pages/tags' },
             { text: 'About', link: '/pages/about' }
-            // { text: 'Airene', link: 'http://airene.net' }  -- External link test
         ],
         search: {
             provider: 'local'
