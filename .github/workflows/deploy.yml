@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build with VitePress
-        run: npm run docs:build # Package.json dagi build skriptingiz
+        run: npm run build # Package.json dagi build skriptingiz
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
